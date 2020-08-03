@@ -12,7 +12,7 @@ Photo Museum is a photo gallery web application to showcase beautiful pictures. 
 - Users can also search for images based categories
 - Admin can upload images from a django dashboard
 
-## Technologies Used
+# Technologies Used
     - Python 3.6
     - Django MVC framework
     - HTML, CSS and Bootstrap
@@ -20,3 +20,16 @@ Photo Museum is a photo gallery web application to showcase beautiful pictures. 
     - Postgressql
     - Heroku
 
+
+# Technologies Used
+    - Python 3.6
+    - Django MVC framework
+    - HTML, CSS and Bootstrap
+    - JavaScript
+    - Postgressql
+    - Heroku
+
+# License
+The application is licensed under MIT licence
+
+copyright © Trever Akumu 2020

@@ -3,7 +3,8 @@
 from __future__ import unicode_literals
 
 from django.db import migrations
-import pyuploadcare.dj.models
+from pyuploadcare.dj.models import ImageField
+from pyuploadcare.dj.forms import FileWidget
 
 
 class Migration(migrations.Migration):

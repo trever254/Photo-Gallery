@@ -75,7 +75,6 @@
     <!-- Location side navebar -->
     <div id="sideNav" class="nav-side">
             <div class="row">
-        {% for location in locations %}
         <a href="/location/{{location.id}}">{{location.name}}</a>
         {% empty %}
         <a href="#">There are no locations</a>

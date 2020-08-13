@@ -30,7 +30,12 @@ class Location(models.Model):
         return self.name
 
 class Category(models.Model):
-    name = models.CharField(max_length =50)
+    name = models.CharField(max_length =50,null=True,blank=True#   * Rearrange models' order
+#   * Make sure each model has one field with primary_key=True
+#   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
+#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+# Feel free to rename the models, but don't rename db_table values or field names.
+)
 
 
     def save_category(self):
@@ -56,7 +61,7 @@ class Image(models.Model):
     pic = models.ImageField(upload_to = 'uploads/')
     description = models.TextField()
     image_location = models.ForeignKey(Location,on_delete=models.CASCADE)
-    image_category = models.ForeignKey(Category,on_delete=models.CASCADE)
+ 
 
     def save_image(self):
         self.save()

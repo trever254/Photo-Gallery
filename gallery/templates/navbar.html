@@ -74,7 +74,10 @@
 
     <!-- Location side navebar -->
     <div id="sideNav" class="nav-side">
-            <div class="row">
+        <a href="javascript:void(0)" class="close-nav">&times;</a>
+        <a href="#" data-toggle="modal" data-target="#about">About</a>
+        <a>Locations:</a>
+        {% for location in locations %}
         <a href="/location/{{location.id}}">{{location.name}}</a>
         {% empty %}
         <a href="#">There are no locations</a>
